@@ -4,7 +4,7 @@ set -e
 echo "Starting postBuild script..."
 
 # Install bash_kernel https://github.com/takluyver/bash_kernel
-python -m bash_kernel.install
+#python -m bash_kernel.install
 
 # Create the target directory if it doesn't exist
 mkdir -p $HOME/.jupyter/
