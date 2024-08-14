@@ -10,7 +10,7 @@ echo "Starting postBuild script..."
 mkdir -p $HOME/.jupyter/
 
 # Copy the config.json file to the target directory
-cp $HOME/.binder/config.json $HOME/.jupyter/
+cp $HOME/.binder/overrides.json $HOME/.jupyter/
 
 
 #/home/jovyan/.jupyter/jupyter_ai/config.json
