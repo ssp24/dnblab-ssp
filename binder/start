@@ -1,0 +1,3 @@
+#!/bin/bash
+# Start JupyterLab with a custom configuration
+exec jupyter lab --AiExtension.default_language_model=openai-chat:gpt-4
