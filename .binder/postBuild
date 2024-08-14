@@ -10,10 +10,10 @@ echo "Starting postBuild script..."
 #mkdir -p /home/jovyan/src/
 mkdir -p $HOME/.jupyter/
 
-mkdir -p /jovyan/local/etc/jupyter/lab/ # system wide configuration
+#mkdir -p /jovyan/local/etc/jupyter/lab/ # system wide configuration
 mkdir -p ~/.jupyter/lab/workspaces/ # workspaces
 mkdir -p ~/.jupyter/lab/settings/
-mkdir -p /jovyan/local/etc/jupyter/lab/settings/
+#mkdir -p /jovyan/local/etc/jupyter/lab/settings/
 
 
 #if [ $? -eq 0 ]; then
