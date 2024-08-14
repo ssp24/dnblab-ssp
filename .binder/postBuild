@@ -3,14 +3,11 @@ set -e
 
 echo "Starting postBuild script..."
 
-# Install bash_kernel https://github.com/takluyver/bash_kernel
-#python -m bash_kernel.install
+# Ensure the .jupyter directory exists
+mkdir -p ~/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension
 
-# Create the target directory if it doesn't exist
-mkdir -p $HOME/.jupyter/
-
-# Copy the config.json file to the target directory
-cp $HOME/.binder/overrides.json $HOME/.jupyter/
+# Copy the overrides.json file to the appropriate directory
+cp .binder/overrides.json ~/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension/overrides.json
 
 
 #/home/jovyan/.jupyter/jupyter_ai/config.json
