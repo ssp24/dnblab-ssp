@@ -3,6 +3,6 @@ requests
 pandas
 bs4
 jupyter-ai
-huggingface_hub
+huggingface_hub==0.24.5
 jupyter-ai-magics
 langchain-openai
