@@ -2,7 +2,7 @@ lxml
 requests
 pandas
 bs4
-jupyter-ai
-jupyter-ai-magics
+#jupyter-ai
+#jupyter-ai-magics
 langchain-openai
 traitlets
