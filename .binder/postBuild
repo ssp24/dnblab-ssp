@@ -1,15 +1,25 @@
 #!/bin/bash
 set -e
 
-echo "Starting postBuild script..."
+log_file="/home/jovyan/postBuild.log"
+
+echo "Starting postBuild script..." | tee -a $log_file
 
 # Ensure the .jupyter directory exists
 mkdir -p ~/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension
+if [ $? -eq 0 ]; then
+    echo "Created .jupyter directory successfully." | tee -a $log_file
+else
+    echo "Failed to create .jupyter directory." | tee -a $log_file
+fi
 
 # Copy the overrides.json file to the appropriate directory
 cp .binder/overrides.json ~/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension/overrides.json
+if [ $? -eq 0 ]; then
+    echo "Copied overrides.json successfully." | tee -a $log_file
+else
+    echo "Failed to copy overrides.json." | tee -a $log_file
+fi
 
-
-#/home/jovyan/.jupyter/jupyter_ai/config.json
-
-echo "postBuild script completed."
+# Final echo to indicate completion
+echo "postBuild script completed." | tee -a $log_file
