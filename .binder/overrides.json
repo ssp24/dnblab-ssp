@@ -1,6 +1,0 @@
-{
-  "@jupyter-ai/jupyter-ai:plugin": {
-    "defaultLanguageModel": "openai-chat:gpt-4"
-  }
-}
-
