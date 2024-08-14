@@ -1,0 +1,4 @@
+#!/bin/bash
+# Make the start script executable
+chmod +x start
+# Additional setup commands can go here
