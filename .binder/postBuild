@@ -27,7 +27,7 @@ mkdir -p ~/.jupyter/lab/settings/
 # Copy the overrides.json file to the appropriate directory
 #cp .binder/overrides.json ~/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension/overrides.json
 
-cp .binder/overrides.json /home/jovyan/src/
+#cp .binder/overrides.json /home/jovyan/src/
 cp .binder/overrides.json $HOME/.jupyter/
 
 cp $HOME/.binder/overrides.json /jovyan/local/etc/jupyter/lab/ # system wide configuration
