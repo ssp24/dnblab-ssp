@@ -1,0 +1,15 @@
+{
+    "model_provider_id": "openai-chat:gpt-4",
+    "embeddings_provider_id": null,
+    "send_with_shift_enter": false,
+    "fields": {
+        "bedrock:ai21.j2-mid-v1": {
+            "model_kwargs": {
+                "maxTokens": 200
+            }
+        }
+    },
+    
+    "completions_model_provider_id": null,
+    "completions_fields": {}
+}
