@@ -1,4 +1,4 @@
 #!/bin/bash
 # Make the start script executable
-chmod +x start
+chmod +x binder/start
 # Additional setup commands can go here
