@@ -7,7 +7,8 @@ echo "Starting postBuild script..."
 #mkdir -p ~/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension
 
 
-mkdir -p /home/jovyan/src/
+#mkdir -p /home/jovyan/src/
+mkdir -p $HOME/.jupyter/
 
 mkdir -p /jovyan/local/etc/jupyter/lab/ # system wide configuration
 mkdir -p ~/.jupyter/lab/workspaces/ # workspaces
@@ -27,10 +28,12 @@ mkdir -p /jovyan/local/etc/jupyter/lab/settings/
 #cp .binder/overrides.json ~/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension/overrides.json
 
 cp .binder/overrides.json /home/jovyan/src/
-cp .binder/overrides.json /jovyan/local/etc/jupyter/lab/ # system wide configuration
-cp .binder/overrides.json ~/.jupyter/lab/workspaces/ # workspaces
-cp .binder/overrides.json ~/.jupyter/lab/settings/
-cp .binder/overrides.json /jovyan/local/etc/jupyter/lab/settings
+cp .binder/overrides.json $HOME/.jupyter/
+
+cp $HOME/.binder/overrides.json /jovyan/local/etc/jupyter/lab/ # system wide configuration
+cp $HOME/.binder/overrides.json ~/.jupyter/lab/workspaces/ # workspaces
+cp $HOME/.binder/overrides.json ~/.jupyter/lab/settings/
+cp $HOME/.binder/overrides.json /jovyan/local/etc/jupyter/lab/settings
 
 
 
