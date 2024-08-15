@@ -1,4 +1,5 @@
-#!/bin/bash
-# Make the start script executable
-chmod +x binder/start
-# Additional setup commands can go here
+#!/usr/bin/env bash
+set -eux
+
+mkdir -p ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
+cp overrides.json ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
