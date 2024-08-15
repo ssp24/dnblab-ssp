@@ -12,7 +12,7 @@ else
 fi
 
 # Copy the overrides.json file
-cp overrides.json ${HOME}/.jupyter/lab/user-settings/@jupyter-ai/ai-extension
+cp binder/overrides.json ${HOME}/.jupyter/lab/user-settings/@jupyter-ai/ai-extension
 #cp overrides.json ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
 if [[ $? -eq 0 ]]; then
   echo "Successfully copied overrides.json to ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings"
