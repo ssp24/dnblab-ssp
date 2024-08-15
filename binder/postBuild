@@ -2,7 +2,7 @@
 set -eux
 
 # Create the directory
-mkdir -p ${HOME}/.jupyter/lab/user-settings/@jupyter-ai/ai-extension
+mkdir -p ${HOME}/.local/share/jupyter/jupyter_ai
 #mkdir -p ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
 if [[ $? -eq 0 ]]; then
   echo "Successfully created the directory ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings"
@@ -12,7 +12,7 @@ else
 fi
 
 # Copy the overrides.json file
-cp binder/overrides.json ${HOME}/.jupyter/lab/user-settings/@jupyter-ai/ai-extension
+cp binder/config.json ${HOME}/.local/share/jupyter/jupyter_ai
 #cp overrides.json ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
 if [[ $? -eq 0 ]]; then
   echo "Successfully copied overrides.json to ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings"
