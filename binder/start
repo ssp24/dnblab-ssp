@@ -1,5 +1,5 @@
 #!/bin/bash
-jupyter lab --AiExtension.default_language_model=bedrock-chat:anthropic.claude-v2
+jupyter lab --AiExtension.default_language_model=openai-chat:gpt-4
 
 
 #!/usr/bin/env bash
